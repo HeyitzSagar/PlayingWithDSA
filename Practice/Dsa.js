@@ -62,4 +62,25 @@ function countfrequency(array3) {
   }
   return freq;
 }
-console.log(countfrequency(array3));
+// console.log(countfrequency(array3));
+//  write a function to check whether an given string anagram or not 
+
+function checkAnagram(str1, str2) {
+    const formatstr1 = str1.replace(/\s/g, '').toLowerCase();
+    const formatstr2 = str2.replace(/\s/g, '').toLowerCase();
+
+    if (formatstr1.length !== formatstr2.length) {
+        return false;
+    }
+
+    // sort the characters in both strings and compare
+    const sortedstr1 = formatstr1.split('').sort().join('');
+    const sortedstr2 = formatstr2.split('').sort().join('');
+
+    if (sortedstr1 === sortedstr2) {
+        return 'Anagram';
+    }
+    else
+    return 'Not Anagram';
+}
+console.log(checkAnagram("Sagar", "Sumit"));
