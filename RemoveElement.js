@@ -17,4 +17,4 @@ function removedarray(array, target) {
     return removedarray;
 }
 
-console.log(removedarray(array, valuetoremove));
+console.log(removedarray(array, valuetoremove));  
