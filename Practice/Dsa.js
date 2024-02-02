@@ -259,18 +259,17 @@ const output = [11, 4, -2, 2, 7];
 
 // function arrayRotation(arr, k) {
 //     for (let i = 0; i < arr.length; i++) {
-        
+
 //     }
 // }
 
-
 const employee = [
-    {name:"Sagar", salary: 35000},
-    {name:"Sugar", salary: 15000},
-    {name:"Sagar", salary: 45000},
-    {name:"Sugar", salary: 55000},
-    {name:"Sumit", salary: 55000},
-]
+  { name: "Sagar", salary: 35000 },
+  { name: "Sugar", salary: 15000 },
+  { name: "Sagar", salary: 45000 },
+  { name: "Sugar", salary: 55000 },
+  { name: "Sumit", salary: 55000 },
+];
 
 // const totalSalaries = employee.reduce((acc, emp) => {
 //     const {name, salary} = emp;
@@ -278,7 +277,6 @@ const employee = [
 //     return acc;
 // }, {});
 // console.log(totalSalaries);
-
 
 const number = [2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -295,10 +293,132 @@ const number = [2, 3, 4, 5, 6, 7, 8, 9];
 // const popedelement = number.pop();
 // console.log(popedelement);
 
-
-//  so basically unshift will add the new element in 
+//  so basically unshift will add the new element in
 //  the begining of the array
 
 // number.unshift(0);
 // console.log(number);
 
+const students = [
+  {
+    id: 1,
+    name: "John Doe",
+    age: 20,
+    grade: "A",
+    subjects: ["Math", "English", "Science"],
+    marks: { math: 90, english: 85, science: 92 },
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    age: 22,
+    grade: "B",
+    subjects: ["History", "Art", "Physics"],
+    marks: { history: 78, art: 88, physics: 75 },
+  },
+  {
+    id: 3,
+    name: "Bob Johnson",
+    age: 19,
+    grade: "C",
+    subjects: ["Chemistry", "Computer Science", "Spanish"],
+    marks: { chemistry: 82, computerScience: 90, spanish: 76 },
+  },
+  {
+    id: 4,
+    name: "Alice Williams",
+    age: 21,
+    grade: "A",
+    subjects: ["Biology", "Literature", "Physical Education"],
+    marks: { biology: 95, literature: 89, physicalEducation: 93 },
+  },
+  {
+    id: 5,
+    name: "Charlie Brown",
+    age: 18,
+    grade: "B",
+    subjects: ["Geography", "Music", "Statistics"],
+    marks: { geography: 80, music: 85, statistics: 88 },
+  },
+];
+
+//  calculate the total marks of the student with id 5;
+
+// const totalmarks = students.filter((item) => item.id == 5).reduce((acc, curr) => {
+//     acc = acc + curr.marks;
+// });
+// console.log(totalmarks)
+
+// for(let i in students)
+// {
+//     console.log(students[i].marks);
+// }
+
+//  create a function that multiplyByTwo(obj) that multiplies all
+//  numeric propertvalues nums by 2.
+
+
+let nums = {
+    a: 100,
+    b: 200,
+    title: "My nums",
+};
+
+// multiplybyTwo(obj);
+
+function multiplyByTwo(obj) {
+    for(let i in obj)
+    {
+        if (typeof obj[i] === "number") {
+            obj[i] = obj[i] * 2;
+        }
+    }
+    return obj;
+}
+// console.log(multiplyByTwo(nums)); 
+// console.log(JSON.stringify(nums)); 
+// console.log([..."Lydia"]); [ 'L', 'y', 'd', 'i', 'a' ]
+
+// const user  = {name: "Sagar", age: 22};
+// const admin = {admin: true, ...user};
+// console.log(admin)
+
+let user = {
+    name: "Sagar",
+    age : 22,
+    fullName: {
+        first: "Sagar",
+        last: "Gupta",
+    }
+}
+// const {name} = user;
+// const {fullName:{last}} = user;
+// console.log(last)
+
+//  object referencing 
+
+// let c = {greeting : "Hey!"};
+// let d;
+// d = c;
+// d.greeting= "Hello";
+// console.log(c.greeting);
+
+
+
+//  write a program to coun the occurrence of the each element of the array
+
+let array9 = [1,2,3,4,5,6,7,1,2,1,2,3,3,4,5,6,2,2,1];
+
+function occurrenc(array9) {
+    let obj = {}
+    for (let i = 0; i < array9.length; i++) {
+        const element = array9[i];
+        if (obj[element]) {
+            obj[element] += 1; 
+        }
+        else
+        obj[element] = 1;
+     }
+     return obj;
+}
+console.log(occurrenc(array9));
