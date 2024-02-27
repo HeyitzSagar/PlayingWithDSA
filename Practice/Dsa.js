@@ -407,18 +407,21 @@ let user = {
 
 //  write a program to coun the occurrence of the each element of the array
 
-let array9 = [1,2,3,4,5,6,7,1,2,1,2,3,3,4,5,6,2,2,1];
+// let array9 = [1,2,3,4,5,6,7,1,2,1,2,3,3,4,5,6,2,2,1];
 
-function occurrenc(array9) {
-    let obj = {}
-    for (let i = 0; i < array9.length; i++) {
-        const element = array9[i];
-        if (obj[element]) {
-            obj[element] += 1; 
-        }
-        else
-        obj[element] = 1;
-     }
-     return obj;
-}
-console.log(occurrenc(array9));
+// function occurrenc(array9) {
+//     let obj = {}
+//     for (let i = 0; i < array9.length; i++) {
+//         const element = array9[i];
+//         if (obj[element]) {
+//             obj[element] += 1; 
+//         }
+//         else
+//         obj[element] = 1;
+//      }
+//      return obj;
+// }
+// console.log(occurrenc(array9));
+
+
+console.log(typeof (8 + 3  + "2"));

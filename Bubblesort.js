@@ -17,7 +17,10 @@ function sortedArray(array) {
   }
   return array;
 }
-
+ 
+const calculate  = () => {
+  return 
+}
 console.log(sortedArray(array));
 
 //  [

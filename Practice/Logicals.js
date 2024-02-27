@@ -333,6 +333,22 @@ const output = users.reduce(function (acc, curr) {
 // console.log(reversedstringsbyword)
 // console.log(arrayofelement[1].split(""));
 
-const ar = [2,7,11,4,-2];
-const sum = ar.reduce((a,b) => a+b);  
-console.log( ar.map( I => sum-I ));
+// const ar = [2,7,11,4,-2];
+// const sum = ar.reduce((a,b) => a+b);  
+// console.log( ar.map( I => sum-I ));
+
+function findmissingpositive(nums)
+{
+  let num = nums.sort((a,b) => a-b);
+  for (let i = 0; i < num.length; i++) {
+    const element = num[i];
+    let next = element + 1;
+    if (next !== num[i+1]) {
+        return next;
+    }
+  }
+  return -1;
+}
+let num = [1,2,0];
+console.log(findmissingpositive(num))
+
