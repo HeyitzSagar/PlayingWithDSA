@@ -32,3 +32,39 @@
 
 // console.log(uniquevowels("Suresh Kumar"));
 
+function findRepeatedElements(arr, k) {
+    const occurrences = {};
+    const result = [];
+
+    for (const num of arr) {
+        occurrences[num] = (occurrences[num] || 0) + 1;
+        // console.log(occurrences[num]);
+        if (occurrences[num] === k) {
+            result.push(num);
+        }
+    }
+
+    return result.length > 0 ? result : -1;
+}
+
+// function findRepeatedElements(num, k) {
+//     const occurrences = {};
+//     const result = [];
+
+//     for(const nums of num)
+//     {
+//        occurrences[num] = (occurrences[num] || 0) + 1;
+//        if (occurrences[num] == k) {
+//             result.push(num);
+//        }
+//     }
+//     return result;
+// }
+
+let number = [2, 2, 4, 4, 4, 2, 6, 7, 8, 9, 10, 11, 13, 15, 16];
+let k = 2;
+
+console.log(findRepeatedElements(number, k));
+
+
+
