@@ -231,27 +231,23 @@ let number = [2, 2, 4, 4, 4, 2, 6, 7, 8, 9, 10, 11, 13, 15, 16];
 let k = 1;
 console.log(findRepeatedElements(number, k));
 
-
 //  find the second largest element in the array
 
-function SecondLargest(ar)
-{
-    let len =  ar.length;
-    let firstMax = ar[0];
-    let secondMax = ar[1];
-    for (let i = 2; i <len; i++) {
-        const element = array[i];
-        if (element > firstMax) {
-            const temp = firstMax;
-            secondMax = firstMax;
-            firstMax = element;
-        }
-        else if (element > secondMax && element !== firstMax)
-        {
-            secondMax = element;
-        }
+function SecondLargest(ar) {
+  let len = ar.length;
+  let firstMax = ar[0];
+  let secondMax = ar[1];
+  for (let i = 2; i < len; i++) {
+    const element = array[i];
+    if (element > firstMax) {
+      const temp = firstMax;
+      secondMax = firstMax;
+      firstMax = element;
+    } else if (element > secondMax && element !== firstMax) {
+      secondMax = element;
     }
-    return secondMax;
+  }
+  return secondMax;
 }
 
 // let occurence = {
@@ -270,7 +266,6 @@ function SecondLargest(ar)
 
 // let filtered = Object.entries(occurence).filter(([key, value]) => value > 1);
 // console.log(filtered);
-
 
 // const employees = [
 //     {name: "Sagar", salary: 25999, address: "Gola Bazar"},
@@ -315,13 +310,72 @@ function SecondLargest(ar)
 
 // console.log(repeatedbykterm(arrayselements, 2));
 
-
 // let objectarray
 
+// function str(s) {
+//     let se = s.trim();
+//   let str=se.split(" ");
+//       return str[str.length-1].length;
+// };
+// console.log(str("Sagar Kumar Gupta  "))
 
-function str(s) {
-    let se = s.trim();
-  let str=se.split(" ");
-      return str[str.length-1].length;
-};
-console.log(str("Sagar Kumar Gupta  "))
+//  return the index of the first unique character in a string.
+
+let s = "leetcode";
+function uniqueelement(str) {
+  let obj = {};
+  for (const nums of str) {
+    obj[nums] = (obj[nums] || 0) + 1;
+  }
+  for (let i = 0; i < str.length; i++) {
+    if (obj[str[i]] === 1) {
+      return `${i} and ${str[i]}`;
+    }
+  }
+}
+console.log(uniqueelement(s));
+
+let salarybracket = [
+  { name: "Sagar", Salary: 30000 },
+  { name: "Sagar", Salary: 30000 },
+  { name: "Sumit", Salary: 30000 },
+  { name: "Sh", Salary: 30000 },
+  { name: "sh", Salary: 30000 },
+];
+
+function calculatecomnbinedsalary(salarybracket) {
+  let combinesalaries = {};
+  for (let i = 0; i < salarybracket.length; i++) {
+    let employee = salarybracket[i];
+
+    let name = employee.name.toLowerCase();
+
+    if (combinesalaries[name]) {
+      combinesalaries[name] += employee.Salary;
+    } else {
+      combinesalaries[name] = employee.Salary;
+    }
+  }
+  return combinesalaries;
+}
+console.log(calculatecomnbinedsalary(salarybracket))
+
+// {
+// function calculatecombinedsalary(salarybracket) {
+//   let combinesalaries = {};
+
+//   for (let i = 0; i < salarybracket.length; i++) {
+//     let employee = salarybracket[i];
+
+//     let name = employee.name.toLowerCase();
+
+//     if (combinesalaries[name]) {
+//       combinesalaries[name] += employee.Salary;
+//     } else {
+//       combinesalaries[name] = employee.Salary;
+//     }
+//   }
+//   return combinesalaries;
+// }
+// // console.log(calculatecombinedsalary(salarybracket));
+// }
