@@ -358,7 +358,7 @@ function calculatecomnbinedsalary(salarybracket) {
   }
   return combinesalaries;
 }
-console.log(calculatecomnbinedsalary(salarybracket))
+console.log(calculatecomnbinedsalary(salarybracket));
 
 // {
 // function calculatecombinedsalary(salarybracket) {
@@ -379,3 +379,23 @@ console.log(calculatecomnbinedsalary(salarybracket))
 // }
 // // console.log(calculatecombinedsalary(salarybracket));
 // }
+
+// Problem - given an array with multiple elements, array can contain duplicate values.
+//  You'll have to remove the duplicate values from the array and return array of unique elements.
+// 1. Input - Length of array, Array itself
+
+let arr = [2, 2, 4, 4, 5, 5, 5, 6, 6];
+function nonrepeatable(arr) {
+  let object = {};
+  let arr1 = [];
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    object[element] = (object[element] || 0) + 1;
+    if (object[element] <= 1) {
+      arr1.push(element);
+    }
+  }
+  return arr1;
+}
+
+console.log(nonrepeatable(arr));

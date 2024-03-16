@@ -200,13 +200,12 @@ const input1 = [1, 4, 7, 2, 4, 7];
 // let word = input.split(" ").map((word) => word.split("").reverse().join(" "));
 // console.log(word);
 
-
 //  let write a code for the factorial using recursion
 
 // function factorial(n) {
 //     if (n === 0 || n === 1) {
 //         return 1;
-//     } 
+//     }
 //     else {
 //         return n * factorial(n - 1);
 //     }
@@ -225,3 +224,142 @@ const input1 = [1, 4, 7, 2, 4, 7];
 
 // Code to write function to find nearest number closest to 0;   will add it later on
 
+//  merge two sorted array and give the unique element
+
+// function mergesortedarray(arr1, arr2) {
+//   let newarray = arr1.concat(arr2);
+//   let uniquearray = new Set(newarray);
+//   return Array.from(uniquearray);
+// }
+// let arr1 = [2, 4, 6, 8, 10, 12, 14, 16, 18];
+// let arr2 = [2, 22, 10, 44, 46, 48];
+// console.log(mergesortedarray(arr1, arr2));
+
+const arrayselements = [2, 2, 4, 5, 5, 5, 3, 2, 2, 5, 6];
+
+function repeatedbykterm(arr, k) {
+  let len = arr.length;
+  let newobject = {};
+
+  for (const nums of arr) {
+    newobject[nums] = (newobject[nums] || 0) + 1;
+  }
+  console.log(newobject);
+  let filtered = Object.entries(newobject).filter(([key, value]) => value > k);
+  return filtered;
+}
+
+console.log(repeatedbykterm(arrayselements, 2));
+
+// find the non-repeated elements in the array
+
+// function findnonrepeated
+
+// const repeatedarray = [2, 2, 4, 4, 6];
+// const output = 6;
+
+// function nonrepeated(repeatedarray) {
+//   for (let i = 0; i < repeatedarray.length; i++) {
+//     const element = repeatedarray[i];
+//     for (let j = 0; j < repeatedarray.length; j++) {
+//       if (element !== repeatedarray[j]) {
+//         return j;
+//       }
+//     }
+//   }
+// }
+
+// console.log(nonrepeated(repeatedarray));
+
+// function nonrepeated(array) {
+//   const object = {};
+
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     object[element] = (object[element] || 0) + 1;
+//   }
+//   // i will be finding the first element with a count of  1
+
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     // console.log(element); understanding the logical behind it
+
+//     if (object[element] === 1) {
+//       return element;
+//     }
+//   }
+//   return undefined;
+// }
+
+// let array = [2, 2, 4, 4, 5, 5, 6];
+// console.log(nonrepeated(array));
+function BinarySearch(array, target) {
+  let low = 0;
+  let high = array.length + 1;
+  while (low <= high) {
+    const mid = Math.floor((low + high) / 2);
+    const midvalue = array[mid];
+    if (midvalue == target) {
+      return mid + 1;
+    } else if (target > midvalue) {
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+  return -1;
+}
+
+// console.log()
+
+// function BinarySearch(array, target)
+// {
+//     let low = 0;
+//     let high = array.length + 1;
+//     while(low <=high)
+//     {
+//         const mid = Math.floor((low+high)/2);
+//         const midvalue = array[mid];
+
+//         if (target == midvalue) {
+//             return mid + 1;
+//         }
+//         else if(target > midvalue)
+//         {
+//             low = mid + 1;
+//         }
+//         else{
+//             high = mid - 1;
+//         }
+//     }
+//     return -1;
+// }
+// let array = [10, 20, 40, 50, 60, 70, 80, 90];
+// let target = 90;
+
+// console.log(BinarySearch(array, target));
+
+let salarybracket = [
+  { name: "Sagar", Salary: 30000 },
+  { name: "Sagar", Salary: 30000 },
+  { name: "Sumit", Salary: 30000 },
+  { name: "Sh", Salary: 30000 },
+  { name: "sh", Salary: 30000 },
+];
+
+function calculatecomnbinedsalary(salarybracket) {
+  let combinesalaries = {};
+  for (let i = 0; i < salarybracket.length; i++) {
+    let employee = salarybracket[i];
+
+    let name = employee.name.toLowerCase();
+
+    if (combinesalaries[name]) {
+      combinesalaries[name] += employee.Salary;
+    } else {
+      combinesalaries[name] = employee.Salary;
+    }
+  }
+  return combinesalaries;
+}
+console.log(calculatecomnbinedsalary(salarybracket));
