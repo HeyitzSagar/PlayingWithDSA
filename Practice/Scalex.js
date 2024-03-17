@@ -399,3 +399,15 @@ function nonrepeatable(arr) {
 }
 
 console.log(nonrepeatable(arr));
+
+function name(arr) {
+  let object = {};
+  let arr1 = [];
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    object[element] = (object[element] || 0) + 1;
+    if (object[element] <= 1) {
+      arr1.push(element);
+    }   
+  }
+}
