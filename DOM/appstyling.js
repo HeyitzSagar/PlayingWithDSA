@@ -84,9 +84,7 @@
 //   }
 // });
 
-
-//  Selecting multiple elements at a single time 
-
+//  Selecting multiple elements at a single time
 
 // var a  = document.querySelectorAll("li");
 // // document.getElementByclassName();
@@ -99,11 +97,77 @@
 
 //  difference between textcontent and innerHTML
 
-//  textcontext basically prints the data it doesnt 
+//  textcontext basically prints the data it doesnt
 //  changes it into the tag
 //  whereas innerHtml changes the data into tags as
 //  given in the strings that is main diff
 
 //  future projects
 
-// 
+// projects on the basis of js dom
+// project-1 to send a friend request on insta
+// on click that heart popup instagram feature
+// insta ka stroy wala features
+
+// creating the first project button add friend/ cancel request
+
+// var a = document.querySelector("button");
+
+// let flag = 0;
+
+// a.addEventListener("click", () => {
+//   if (flag == 0) {
+//     a.innerHTML = "Cancel Request";
+//     flag = 1;
+//   } else {
+//     a.innerHTML = "Add Friend";
+//     flag = 0;
+//   }
+// });
+
+// creating the second project which is heart popup
+//  on like functionalitie
+
+//  creating an counter using dom
+
+// var a = document.querySelector(".add");
+// var value = document.querySelector(".value");
+// a.addEventListener("click", () => {
+//   value.innerHTML = +value.innerHTML + 1;
+// });
+// var sub = document.querySelector(".sub");
+
+// sub.addEventListener("click", () => {
+//   if (value.innerHTML > 0) {
+//     value.innerHTML = +value.innerHTML - 1;
+//   }
+// });
+
+//  creating a timer app
+
+// var value = document.querySelector(".value");
+
+// var starttimer = document.querySelector(".Start");
+// var stoptimer = document.querySelector(".Stop");
+// let intervalID;
+// starttimer.addEventListener("click", function () {
+//   intervalID = setInterval(() => {
+//     value.innerHTML = +value.innerHTML + 1;
+//   }, 1000);
+// });
+
+// stoptimer.addEventListener("click", function () {
+//   clearInterval(intervalID);
+//   value.innerHTML = +0;
+// });
+
+
+const fetchdata = async() => {
+    const user = await fetch('https://api.github.com/users/HeyitzSagar');
+    console.log(user);
+};
+console.log(fetchdata())
+
+// const user  = fetch('https://github.com/HeyitzSagar');
+// console.log(user);
+
