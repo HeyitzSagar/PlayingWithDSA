@@ -5,7 +5,7 @@
 //     return a+b;
 // }
 
-const { reject } = require("async");
+// const { reject } = require("async");
 
 //  async functions  always returns a promise
 

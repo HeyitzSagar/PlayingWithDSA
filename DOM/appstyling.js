@@ -171,3 +171,5 @@ console.log(fetchdata())
 // const user  = fetch('https://github.com/HeyitzSagar');
 // console.log(user);
 
+// var value = document.querySelector(".value");
+// value.remove();
