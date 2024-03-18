@@ -178,20 +178,104 @@
 // c = 25;
 // console.log(c);
 
-function generatePattern() {
-    let pattern = [];
-    let start = 11;
-    let step = -5;
-    
-    for (let i = 0; i < 4; i++) {
-        pattern.push(start);
-        start += step;
-        step = -step; // alternate between adding and subtracting 5
-    }
-    return pattern;
-}
+// function generatePattern() {
+//     let pattern = [];
+//     let start = 11;
+//     let step = -5;
 
-// Generate the pattern
-const result = generatePattern();
+//     for (let i = 0; i < 4; i++) {
+//         pattern.push(start);
+//         start += step;
+//         step = -step; // alternate between adding and subtracting 5
+//     }
+//     return pattern;
+// }
 
-console.log(result); // Output: [11, 6, 1, -4, 1, 6, 11, 16]
+// // Generate the pattern
+// const result = generatePattern();
+
+// console.log(result); // Output: [11, 6, 1, -4, 1, 6, 11, 16]
+
+// 347. Top K Frequent Elements
+// Medium
+// Topics
+// Companies
+// Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+
+// Example 1:
+
+// Input: nums = [1,1,1,2,2,3], k = 2
+// Output: [1,2]
+// Example 2:
+
+// Input: nums = [1], k = 1
+// Output: [1]
+
+// let nums = [1,1,1,2,2,3]
+// let k = 2
+
+// // output : [1,2]
+// let num2 = [1]
+// let k2 = 1;
+// // output = [1]
+
+// function topKfrequent(nums, K) {
+//     let object = {};
+//     for(const num of nums)
+//     {
+//         object[num] = (object[num] || 0) + 1;
+//         console.log(object[num]);
+//     }
+//     let entries = Object.entries(object);
+//     console.log(entries);
+//     let sorted = entries.sort((a, b) => b[1] - a[1]).slice(0, K);
+//    return sorted.map(subArray => subArray[0]);
+// }
+
+// console.log(topKfrequent(num2, k2));
+
+// 128. Longest Consecutive Sequence
+// Medium
+// Topics
+// Companies
+// Given an unsorted array of integers nums, return the
+//  length of the longest consecutive elements sequence.
+
+// You must write an algorithm that runs in O(n) time.
+
+// Example 1:
+
+// Input: nums = [100,4,200,1,3,2]
+// Output: 4
+// Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+// Example 2:
+
+// Input: nums = [0,3,7,2,5,8,4,6,0,1]
+// Output: 9
+
+// let arr = [1, 2, 3, 4, 11, 14];
+//  output = 4    as // [1,2, 3, 4];
+
+// 125. leetcode valid Palindrome
+
+// function validpalindrome(s) {
+//   const regex = /[^a-zA-Z0-9\s]/g;
+//   let str = s.replace(regex, "");
+//   console.log(str);
+//   let string = str.trim(" ");
+//   console.log(string);
+//   let string1 = string.toLowerCase().trim();
+//   let string2 = string1.split("").reverse().join("");
+//   console.log(string1);
+//   console.log(string2);
+//   if (string1 == string2) {
+//     return true;
+//   }
+//   return false;
+// }
+// console.log(validpalindrome("A man, a plan, a canal: Panama"));
+
+let arr = [];
+arr.push(1);
+arr.push(2);
+console.log(arr);

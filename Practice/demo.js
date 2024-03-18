@@ -249,7 +249,7 @@ function repeatedbykterm(arr, k) {
   return filtered;
 }
 
-console.log(repeatedbykterm(arrayselements, 2));
+// console.log(repeatedbykterm(arrayselements, 2));
 
 // find the non-repeated elements in the array
 
@@ -362,4 +362,4 @@ function calculatecomnbinedsalary(salarybracket) {
   }
   return combinesalaries;
 }
-console.log(calculatecomnbinedsalary(salarybracket));
+// console.log(calculatecomnbinedsalary(salarybracket));
