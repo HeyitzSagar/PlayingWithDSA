@@ -1,0 +1,42 @@
+const quizData = [
+  {
+    question: "What is the capital of France?",
+    optionA: "Paris",
+    optionB: "London",
+    optionC: "Berlin",
+    optionD: "Madrid",
+    correctAnswer: "A",
+  },
+  {
+    question: "Who wrote 'Romeo and Juliet'?",
+    optionA: "William Shakespeare",
+    optionB: "Charles Dickens",
+    optionC: "Jane Austen",
+    optionD: "Mark Twain",
+    correctAnswer: "A",
+  },
+  {
+    question: "What is the chemical symbol for water?",
+    optionA: "O2",
+    optionB: "CO2",
+    optionC: "H2O",
+    optionD: "N2",
+    correctAnswer: "C",
+  },
+  {
+    question: "Which planet is known as the Red Planet?",
+    optionA: "Mars",
+    optionB: "Venus",
+    optionC: "Jupiter",
+    optionD: "Saturn",
+    correctAnswer: "A",
+  },
+  {
+    question: "What is the largest mammal?",
+    optionA: "Elephant",
+    optionB: "Blue Whale",
+    optionC: "Giraffe",
+    optionD: "Hippopotamus",
+    correctAnswer: "B",
+  },
+];

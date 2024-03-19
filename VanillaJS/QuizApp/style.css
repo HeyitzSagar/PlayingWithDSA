@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(216, 201, 229);
+  min-height: 100vh;
+  margin: 0;
+}
+.quiz-container {
+  background-color: #fff;
+}
+button {
+  width: 110px;
+  height: 32px;
+  background-color: blue;
+  color: #fff;
+  padding: 5px;
+}
