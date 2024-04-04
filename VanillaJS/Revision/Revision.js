@@ -170,3 +170,85 @@ function functionscope() {
 // Example usage:
 
 // console.log("Number closest to zero:", closestToZero(nums)); // Output: 1
+
+// let str = "Saagga";
+// // output = "s"
+// function uniqueletter(str) {
+//   let object = {};
+//   for (const i of str) {
+//     object[i] = (object[i] || 0) + 1;
+//   }
+//   let uniqueelement = Object.entries(object).filter(
+//     ([key, value]) => value == 1
+//   );
+//   return uniqueelement.flat();
+// }
+
+// console.log(uniqueletter(str));
+
+// function rest(...rest) {
+//     let sum = 0;
+//     for (let i = 0; i < rest.length; i++) {
+//         sum += rest[i];
+//     }
+//     return sum;
+// }
+
+// console.log(rest(2, 3, 4, 5)); // Output: 14 (2 + 3 + 4 + 5)
+
+
+
+// <-------------------- Dassault Interview  ------------------------------------------>
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// var a = 1; 
+// function test(){
+// 	console.log(a);
+// 	var a = 2;  // 
+// }
+// test();
+// Find all 4 digit numbers divisible by 5 and 7 and unit place must be zero
+
+
+// function  allfourdigit()
+// {
+//     let start = 1050;
+//     let end = 9999;
+//     let arr = [];
+//   for(let i = start; i<= end; i = i + 70)
+//   {
+//      arr.push(i);
+//   }
+//   return arr;
+// }
+// console.log(allfourdigit());
+
+// for(var i = 1; i <= 5; i++) {
+//   setTimeout(function() {
+//       console.log('Value of i : ' + i); 
+//   },100);
+// }
+// for(let i = 1; i <= 5; i++) {
+//   setTimeout(function() {
+//       console.log('Value of i using let  : ' + i); 
+//   },100);
+// }
+
+// const person = { age: 20, name: 'Ben' };
+// const peopleArray = [person, person, person];
+// peopleArray[1].name = 'Joe'; 
+// console.log(peopleArray[0].name);  // Ben
+
+// const person = { age: 20, name: 'Ben' };
+// const peopleArray = [person, person, person];
+// peopleArray[1].name = 'Joe'; 
+// console.log(peopleArray[2].name);  
+// console.log(person);
+
+// var a = null;
+// var b = undefined;
+
+// console.log(typeof a);
+// console.log(typeof b);

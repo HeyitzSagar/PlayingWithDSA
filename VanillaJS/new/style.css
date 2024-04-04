@@ -1,0 +1,40 @@
+/* Targeting all text on the page */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Targeting the header elements */
+header {
+  background-color: #1e90ff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+/* Targeting the nav elements */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Targeting the nav links */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
+/* Targeting the main section */
+section {
+  padding: 20px;
+}
+
+/* Targeting the footer element */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #1e90ff;
+  color: #fff;
+}

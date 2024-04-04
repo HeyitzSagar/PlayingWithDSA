@@ -173,3 +173,6 @@ console.log(fetchdata())
 
 // var value = document.querySelector(".value");
 // value.remove();
+
+
+

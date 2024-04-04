@@ -75,7 +75,6 @@ const p1 = new Promise((resolve, reject) => {
 
 async function handlepromise3() {
     const val = await p3; // await is a keyword that can be only used inside the async functions
-  
     console.log(val);
     console.log("Value3");
   }

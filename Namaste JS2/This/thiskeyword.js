@@ -9,3 +9,5 @@ function x ()
 {
     console.log(this);  // undefined
 }
+
+
