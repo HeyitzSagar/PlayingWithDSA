@@ -144,13 +144,19 @@
 //     }
 // };
 // console.log(fNUmbers(9));
-var fNumbers = function (q) {
-    if (q === 1) {
-        return [0, 1];
-    } else {
-        var z = fNumbers(q - 1);
-        z.push(z[z.length - 1] + z[z.length - 2]); // Corrected the indices for accessing the last two elements
-        return z;
-    }
-};
-console.log(fNumbers(10)); // Adjusted to generate Fibonacci sequence up to 10th term
+// var fNumbers = function (q) {
+//     if (q === 1) {
+//         return [0, 1];
+//     } else {
+//         var z = fNumbers(q - 1);
+//         z.push(z[z.length - 1] + z[z.length - 2]); // Corrected the indices for accessing the last two elements
+//         return z;
+//     }
+// };
+// console.log(fNumbers(10)); // Adjusted to generate Fibonacci sequence up to 10th term
+
+
+// const currentTime = new Date();
+// console.log(currentTime);
+// const tenMinutesBefore = new Date(currentTime.getTime() - 10 * 60000);
+// console.log(tenMinutesBefore);
