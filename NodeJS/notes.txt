@@ -1,0 +1,59 @@
+What is node js ?
+Node.js is an open-source, server-side JavaScript
+runtime environment built on Chrome's V8 JavaScript engine. 
+It allows developers to run JavaScript code outside of a web browser,
+enabling them to create scalable and high-performance applications.
+
+What is Express ? 
+
+Express is a minimal and flexible web application framework for Node.js, 
+designed to make building web applications and APIs easier and
+more efficient. It provides a robust set of features for web
+and mobile applications, including routing, middleware support,
+templating engines, and much more. 
+
+What is routing in Node JS ? 
+Routing in Node.js refers to the process of determining 
+how an application responds to client requests to different
+endpoints (URLs). It involves mapping HTTP requests 
+(such as GET, POST, PUT, DELETE) to specific pieces of code 
+or handlers that are responsible 
+for processing those requests and generating appropriate responses.
+
+What is Middleware in Node JS ? 
+Middleware in Node.js refers to functions that have access to the 
+request and response objects in the HTTP request-response cycle. 
+These functions can perform tasks such as modifying request or response
+objects, executing additional code, terminating the request-response 
+cycle, or passing control to the next middleware function in the stack.
+
+How Node JS handles concurrency issues ?
+Node JS handles concurrency through its event driven, non-blocking I/O models
+
+Some of the list are as below:
+
+It uses event loop to handle concurrency issues.
+Callbacks and Promises
+Wokers threads and cluster
+
+What is JWT ? How do you authenticate with JWT ?
+JWT stands for JSON Web Token. 
+It is a compact and self-contained way of securely 
+transmitting information between parties as a JSON object.
+JWTs are commonly used for authentication and authorization 
+in web applications.
+A JWT consists of three parts: a header, a payload, and a signature.
+These parts are separated by dots ('.'). The header typically contains
+information about the type of token and the hashing algorithm used.
+
+What is Socket ? 
+A socket is a communication endpoint that allows two different 
+processes to communicate with each other, either on the same machine 
+or over a network. Sockets enable bidirectional data transfer between 
+a client and a server, facilitating real-time communication between 
+applications.
+
+What are the main modules of node JS ?
+
+HTTP, FS, stream, util, crypto, os and so on.
+

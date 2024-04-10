@@ -218,18 +218,18 @@ function SecondLargest(arr) {
 // }
 // console.log(func1(array));
 
-function findRepeatedElements(arr, k) {
-  const occurrenc = {};
-  for (const nums of arr) {
-    occurrenc[nums] = (occurrenc[nums] || 0) + 1;
-  }
-  let filtered = Object.entries(occurrenc).filter(([key, value]) => value > 1);
-  return filtered;
-}
+// function findRepeatedElements(arr, k) {
+//   const occurrenc = {};
+//   for (const nums of arr) {
+//     occurrenc[nums] = (occurrenc[nums] || 0) + 1;
+//   }
+//   let filtered = Object.entries(occurrenc).filter(([key, value]) => value > 1);
+//   return filtered;
+// }
 
-let number = [2, 2, 4, 4, 4, 2, 6, 7, 8, 9, 10, 11, 13, 15, 16];
-let k = 1;
-console.log(findRepeatedElements(number, k));
+// let number = [2, 2, 4, 4, 4, 2, 6, 7, 8, 9, 10, 11, 13, 15, 16];
+// let k = 1;
+// console.log(findRepeatedElements(number, k));
 
 //  find the second largest element in the array
 
