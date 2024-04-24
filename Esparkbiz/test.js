@@ -85,14 +85,14 @@
 // console.log(count);
 
 
-// const arr1 = [
-// 	{ name: 'A', parent: 1 },
-// 	{ name: 'B', parent: 1 },
-// 	{ name: 'C', parent: 1 },
-// 	{ name: 'Aa', parent: 2 },
-// 	{ name: 'Bb', parent: 2 },
-// 	{ name: 'Abc', parent: 3 },
-// ]
+const arr1 = [
+	{ name: 'A', parent: 1 },
+	{ name: 'B', parent: 1 },
+	{ name: 'C', parent: 1 },
+	{ name: 'Aa', parent: 2 },
+	{ name: 'Bb', parent: 2 },
+	{ name: 'Abc', parent: 3 },
+]
 
 // // output: {
 // // 	1: ['A', 'B', C],
