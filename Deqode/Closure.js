@@ -41,7 +41,8 @@
 
 // undefined vs notdefined 
 
-// in undefined a variable is intialized but has not been assign a value
+// in undefined a variable is intialized 
+// but has not been assign a value
 // in not defined a variable is intialized as well as assigned but can not be accesible
 
 
@@ -71,3 +72,33 @@
 
 
 
+const employeewithtotalsalary = [
+    {
+      name: "Sagar",
+      salary: 19294,
+    },
+    {
+      name: "Sagar",
+      salary: 32433,
+    },
+    {
+      name: "Shailesh",
+      salary: 19294,
+    },
+    {
+      name: "Shailesh",
+      salary: 19294,
+    },
+  ];
+  
+  let output = {};
+  
+  employeewithtotalsalary.forEach((item) => {
+      if (!output[item.name]) {
+          output[item.name] = 0;
+      }
+      output[item.name] += item.salary;
+  });
+  
+  console.log(output);
+  
