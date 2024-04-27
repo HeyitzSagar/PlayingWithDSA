@@ -256,3 +256,47 @@ const employee = [
 //     Designer: 35,   // Total hours from Bob and David
 //     QA: 25          // Total hours from Eve
 // }
+
+// let array = [1, 2, 3, 5, 6, 7, 1, 2, 3, 6, 4];
+
+// function mostRepeatedAndFreq(array)
+// {
+//     let output = {}
+//     for(const num of array)
+//     {
+//         output[num] = (output[num] || 0) + 1;
+//     }
+//     return output
+// }
+// console.log(mostRepeatedAndFreq(array));
+
+// let frequency = { '1': 2, '2': 2, '3': 2, '4': 1, '5': 1, '6': 2, '7': 1 };
+// let frequencyArray = Object.entries(frequency);
+// console.log(frequencyArray)
+// frequencyArray.sort((a, b) => b[1] - a[1]);
+// console.log(frequencyArray);
+// let highestFrequency = frequencyArray[0][1];
+// console.log(highestFrequency);
+// let mostFrequentKeys = frequencyArray.filter(pair => pair[1] === highestFrequency).map(pair => pair[0]);
+
+// console.log("Most frequent keys:", mostFrequentKeys);
+
+
+// let string = "SagarGupta";
+
+// function checkpalindrome(string)
+// {
+//     for(let i = 0; i<string.length/2; i++)
+//     {
+//         if(string[i] !== string[string.length - 1- i])
+//         {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+// console.log(checkpalindrome(string));
+
+
