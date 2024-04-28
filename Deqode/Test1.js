@@ -299,4 +299,24 @@ const employee = [
 
 // console.log(checkpalindrome(string));
 
+const object = [
+    {id: 1, empname: "Sagar", salary: 64402},
+    {id: 2, empname: "Sumit", salary: 33244},
+    {id: 3, empname: "Sandeep", salary: 32334},
+    {id: 4, empname: "Shweta", salary: 93822},
+    {id: 5, empname: "Sumit", salary: 32432},
+]
+
+//  group the total salary based of the employee
+
+let output = {};
+
+object.forEach((item) => {
+    if (!output[item.empname]) {
+        output[item.empname] = [];
+    }
+    output[item.empname] += item.salary
+})
+console.log(output)
+
 
