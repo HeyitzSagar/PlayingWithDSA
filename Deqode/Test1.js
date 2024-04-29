@@ -69,7 +69,6 @@ const arr1 = [
 
 // console.log(output);
 
-
 // const object = [
 //     {id: 1, empname: "Sagar", salary: 64402},
 //     {id: 2, empname: "Sumit", salary: 33244},
@@ -90,7 +89,6 @@ const arr1 = [
 // })
 // console.log(output)
 
-
 /*
 Input: [{id:1, value: 20},{id: 2, value: 25},{id:3, value: 2},{id: 1, value: 4},{id: 2, value: 6}]
 
@@ -103,9 +101,9 @@ Output: [{id:1, value: 24},{id: 2, value: 31},{id:3, value: 2}]
 //     {id:3, value: 2},
 //     {id: 1, value: 4},
 //     {id: 2, value: 6}];
-    
+
 //     let output = {};
-    
+
 //     input.forEach((item) => {
 //     if(!output[item.id])
 //     {
@@ -136,12 +134,7 @@ Output: [{id:1, value: 24},{id: 2, value: 31},{id:3, value: 2}]
 
 // console.log(output);
 
-
-
-
-
-
-// output 
+// output
 // let output = {}
 
 // employee.forEach((item) => {
@@ -156,7 +149,6 @@ Output: [{id:1, value: 24},{id: 2, value: 31},{id:3, value: 2}]
 // output = Object.keys(output).map((id) => ({ name: id, value: output[id] }));
 // console.log(output);
 
-
 // const employee = [
 //     {id: 1, name: "Sagar", salary: 23423},
 //     {id: 2, name: "Sumit", salary: 23423},
@@ -168,10 +160,10 @@ Output: [{id:1, value: 24},{id: 2, value: 31},{id:3, value: 2}]
 // console.log(output);
 
 const employee = [
-    {id: 1, name: "Sagar", salary: 23423},
-    {id: 2, name: "Sumit", salary: 23423},
-    {id: 3, name: "Afghan", salary: 23423},
-    {id: 4, name: "Sagar", salary: 23423},
+  { id: 1, name: "Sagar", salary: 23423 },
+  { id: 2, name: "Sumit", salary: 23423 },
+  { id: 3, name: "Afghan", salary: 23423 },
+  { id: 4, name: "Sagar", salary: 23423 },
 ];
 // [
 //     { name: 'Sagar', value: 46846 },
@@ -205,11 +197,9 @@ const employee = [
 // output = Object.keys(output).map((id) => ({ name: id, value: output[id] }));
 // console.log(output);
 
+//  Keys, values and entries
 
-//  Keys, values and entries 
-
-
-// Input: 
+// Input:
 // const projects = [
 //     {
 //         projectName: "Alpha",
@@ -230,8 +220,6 @@ const employee = [
 //     }
 // ];
 
-
-
 // function groupedbyroleandHours(projects)
 // {
 //     let output = {};
@@ -239,9 +227,9 @@ const employee = [
 //         let {team} = element;
 //         for(const item of team)
 //         {
-//             if (!output[item.role]) { 
+//             if (!output[item.role]) {
 //                 output[item.role] = 0;
-//             }   
+//             }
 //             output[item.role] +=item.hoursAllocated;
 //         }
 //     });
@@ -281,7 +269,6 @@ const employee = [
 
 // console.log("Most frequent keys:", mostFrequentKeys);
 
-
 // let string = "SagarGupta";
 
 // function checkpalindrome(string)
@@ -299,24 +286,131 @@ const employee = [
 
 // console.log(checkpalindrome(string));
 
-const object = [
-    {id: 1, empname: "Sagar", salary: 64402},
-    {id: 2, empname: "Sumit", salary: 33244},
-    {id: 3, empname: "Sandeep", salary: 32334},
-    {id: 4, empname: "Shweta", salary: 93822},
-    {id: 5, empname: "Sumit", salary: 32432},
-]
+// const object = [
+//     {id: 1, empname: "Sagar", salary: 64402},
+//     {id: 2, empname: "Sumit", salary: 33244},
+//     {id: 3, empname: "Sandeep", salary: 32334},
+//     {id: 4, empname: "Shweta", salary: 93822},
+//     {id: 5, empname: "Sumit", salary: 32432},
+// ]
 
-//  group the total salary based of the employee
+// //  group the total salary based of the employee
 
-let output = {};
+// let output = {};
 
-object.forEach((item) => {
-    if (!output[item.empname]) {
-        output[item.empname] = [];
-    }
-    output[item.empname] += item.salary
-})
-console.log(output)
+// object.forEach((item) => {
+//     if (!output[item.empname]) {
+//         output[item.empname] = [];
+//     }
+//     output[item.empname] += item.salary
+// })
+// console.log(output)
+
+//  java script program to find the most frequent element inside the array
+
+// let arr = [1, 1, 3, 5, 7, 4, 4, 4, 4, 4, 6, 8, 5, 6, 4, 7, 6, 0, 2, 1, 6, 8, 9, 5];
+
+// function mostoccurence(arr) {
+//   let obj = {};
+//   let max = 0;
+//   let element = 0;
+//   for(const num of arr)
+//   {
+//     obj[num] = (obj[num] || 0) + 1;
+//   }
+//   console.log(obj);
+//   for(const i in obj)
+//   {
+//     if (max < obj[i]) {
+//       max = obj[i];
+//       element = i;
+//       console.log(`value of element at ${obj[i]} and element is ${i}`);
+//     }
+//   }
+//   return element;
+// }
+
+// let value = occurence(arr);
+// console.log(value);
+
+//  find the second most occurrent element in the array
+
+// let arr = [1, 1, 3, 5, 7, 6, 8, 5, 6, 4, 7, 6, 0, 2, 1, 6, 8, 9, 5];
+
+// function secondMostOccurrence(arr) {
+//   let obj = {};
+  
+//   // Count occurrences of each element
+//   for(const num of arr) {
+//     obj[num] = (obj[num] || 0) + 1;
+//   }
+//   console.log(obj);
+  
+//   // Find the first and second maximum occurrences
+//   let max = 0;
+//   let secondMax = 0;
+  
+//   for(const i in obj) {
+//     if (obj[i] > max) {
+//       secondMax = max;
+//       max = obj[i];
+//     } else if (obj[i] > secondMax && obj[i] < max) {
+//       secondMax = obj[i];
+//     }
+//   }
+  
+//   // Find the element with the second most occurrences
+//   let secondMostElement;
+//   for(const i in obj) {
+//     if (obj[i] === secondMax) {
+//       secondMostElement = i;
+//       break; // Stop when the second most element is found
+//     }
+//   }
+  
+//   return secondMostElement;
+// }
+
+// console.log(secondMostOccurrence(arr));
 
 
+
+// arr.sort((a,b) => a-b);
+// console.log(arr);
+
+// let count = 1;
+// let max = 0;
+// let el = 0;
+
+//   for (let i = 1; i < arr.length; i++) {
+//       if (arr[i] === arr[i-1]) {
+//         count++;
+//       }
+//       else{
+//         count = 1;
+//       }
+//       if (count > max) {
+//         max  = count;
+//         // console.log(count);
+//         el = arr[i];
+//       }
+//   };
+
+//   console.log(el);
+
+// JavaScript Program to Find k Most Frequent Elements in Array
+
+
+
+// function factorial(n)
+// {
+//   if (n == 0 || n == 1) {
+//     return 1;
+//   }
+//   else{
+
+//     return n * factorial(n-1);
+//   }
+
+// }
+// console.log(factorial(10));
