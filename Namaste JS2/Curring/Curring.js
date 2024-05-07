@@ -65,3 +65,16 @@ function add(...args) {
 // Usage
 const sum = add(1)(2)(3)(4)(); // Returns 10
 console.log(sum); // Output: 10
+
+
+
+
+//  still to figure out that why we actually need currying when we can do
+// or solve it using general functions 
+
+//  curriying is like a little knowledge with composition 
+
+
+
+//  what is composition ?
+
